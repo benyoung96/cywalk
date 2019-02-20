@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = convertToOptionalNSAttributedStringKeyDictionary([NSAttributedString.Key.foregroundColor.rawValue: UIColor.white])
         
         //google maps api key
-        GMSServices.provideAPIKey("AIzaSyAMHV3Q6OT5maE5WZfp4iu3LuINmZgPKTs")
+        GMSServices.provideAPIKey("")
         
         return true
     }
