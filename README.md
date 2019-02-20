@@ -1,6 +1,6 @@
-# Cywalk
+# CyWalk
 
-Cywalk if an applicatoin that uses Djikstra's algorithum to find the shortest path between two buildings on the Iowa State University campus. Some of the buildings support inside paths. This allows the path from building A to building B go through a building if the path is shorter than going around the building.
+CyWalk if an applicatoin that uses Djikstra's algorithum to find the shortest path between two buildings on the Iowa State University campus. Some of the buildings support inside paths. This allows the path from building A to building B go through a building if the path is shorter than going around the building.
 
 ![alt text](https://github.com/benyoung96/cywalk/blob/master/images/buildiings.png)
 ![alt text](https://github.com/benyoung96/cywalk/blob/master/images/regular_path.png)
@@ -18,3 +18,7 @@ To run the application all you need to do is clone the application and input a G
         return true
     }
 ```
+
+# User Location
+
+CyWalk is intented for use on the Iowa State University campus. This matters because when the app first starts up the window of the map is located on the user's current location. To see the building overlays and to interact with them the user has to move to Ames, Iowa on the map which is just north of the capital Des Moines, Iowa.
