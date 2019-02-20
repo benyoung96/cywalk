@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0160681DC95F51002C15F0 /* Gps_Id.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0160671DC95F51002C15F0 /* Gps_Id.swift */; };
+		1F17BD561DC59B5200566F53 /* Vertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17BD551DC59B5200566F53 /* Vertex.swift */; };
+		1F17BD581DC59B8500566F53 /* Binnode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17BD571DC59B8500566F53 /* Binnode.swift */; };
+		1F17BD5A1DC59BA500566F53 /* BinaryHeap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F17BD591DC59BA500566F53 /* BinaryHeap.swift */; };
+		1F61AB921DC7D0A7002FB996 /* Dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F61AB911DC7D0A7002FB996 /* Dijkstra.swift */; };
+		1FD962481DE0281D00D05821 /* Buildingscourtyard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD962471DE0281C00D05821 /* Buildingscourtyard.swift */; };
+		37007CE5F04E56894121D0B8 /* libPods-CyWalk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D803C5DBC085DB92312956D6 /* libPods-CyWalk.a */; };
+		94048D561D7F838C00994815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94048D551D7F838C00994815 /* AppDelegate.swift */; };
+		94048D5D1D7F838C00994815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94048D5C1D7F838C00994815 /* Assets.xcassets */; };
+		94048D601D7F838C00994815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94048D5E1D7F838C00994815 /* LaunchScreen.storyboard */; };
+		94048D6B1D7F838C00994815 /* CyWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94048D6A1D7F838C00994815 /* CyWalkTests.swift */; };
+		94048D761D7F838C00994815 /* CyWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94048D751D7F838C00994815 /* CyWalkUITests.swift */; };
+		94195C3A1DC452A9007AC1FA /* Paths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94195C391DC452A9007AC1FA /* Paths.swift */; };
+		94195C3C1DC454E6007AC1FA /* Intersections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94195C3B1DC454E6007AC1FA /* Intersections.swift */; };
+		9425BF901DC4461D00B0794D /* Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425BF8F1DC4461D00B0794D /* Intersection.swift */; };
+		9425BF941DC446DF00B0794D /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9425BF931DC446DF00B0794D /* Path.swift */; };
+		943A2B291DA0D8B500F55B41 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943A2B281DA0D8B500F55B41 /* MapViewController.swift */; };
+		94B538741DC9A82000AB9910 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B538731DC9A82000AB9910 /* Building.swift */; };
+		94B538761DC9AAA600AB9910 /* Buildings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B538751DC9AAA600AB9910 /* Buildings.swift */; };
+		B5AC2474221DC66E00DE3DD2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC2473221DC66D00DE3DD2 /* Coordinator.swift */; };
+		B5AC2477221DC69700DE3DD2 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC2476221DC69700DE3DD2 /* MainCoordinator.swift */; };
+		B5AC2479221DC77100DE3DD2 /* ControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC2478221DC77100DE3DD2 /* ControllerType.swift */; };
+		B5AC2484221DCB9100DE3DD2 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC2483221DCB9100DE3DD2 /* UIColor+Extensions.swift */; };
+		B5AC2486221DCD4100DE3DD2 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5AC2485221DCD4100DE3DD2 /* UINavigationController+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94048D671D7F838C00994815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94048D4A1D7F838C00994815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94048D511D7F838C00994815;
+			remoteInfo = CyWalk;
+		};
+		94048D721D7F838C00994815 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94048D4A1D7F838C00994815 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94048D511D7F838C00994815;
+			remoteInfo = CyWalk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05564605DAAB705E8BCA0C76 /* Pods-CyWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyWalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CyWalk/Pods-CyWalk.debug.xcconfig"; sourceTree = "<group>"; };
+		1F0160671DC95F51002C15F0 /* Gps_Id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gps_Id.swift; sourceTree = "<group>"; };
+		1F17BD551DC59B5200566F53 /* Vertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vertex.swift; sourceTree = "<group>"; };
+		1F17BD571DC59B8500566F53 /* Binnode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binnode.swift; sourceTree = "<group>"; };
+		1F17BD591DC59BA500566F53 /* BinaryHeap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryHeap.swift; sourceTree = "<group>"; };
+		1F61AB911DC7D0A7002FB996 /* Dijkstra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dijkstra.swift; sourceTree = "<group>"; };
+		1FD962471DE0281C00D05821 /* Buildingscourtyard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildingscourtyard.swift; sourceTree = "<group>"; };
+		94048D521D7F838C00994815 /* CyWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CyWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94048D551D7F838C00994815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94048D5C1D7F838C00994815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94048D5F1D7F838C00994815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94048D611D7F838C00994815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94048D661D7F838C00994815 /* CyWalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyWalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94048D6A1D7F838C00994815 /* CyWalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyWalkTests.swift; sourceTree = "<group>"; };
+		94048D6C1D7F838C00994815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94048D711D7F838C00994815 /* CyWalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CyWalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94048D751D7F838C00994815 /* CyWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyWalkUITests.swift; sourceTree = "<group>"; };
+		94048D771D7F838C00994815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94195C391DC452A9007AC1FA /* Paths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paths.swift; sourceTree = "<group>"; };
+		94195C3B1DC454E6007AC1FA /* Intersections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intersections.swift; sourceTree = "<group>"; };
+		9425BF8F1DC4461D00B0794D /* Intersection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intersection.swift; sourceTree = "<group>"; };
+		9425BF931DC446DF00B0794D /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		943A2B281DA0D8B500F55B41 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		94B538731DC9A82000AB9910 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		94B538751DC9AAA600AB9910 /* Buildings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buildings.swift; sourceTree = "<group>"; usesTabs = 0; };
+		A799FA8F518232B257B3078B /* Pods-CyWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CyWalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-CyWalk/Pods-CyWalk.release.xcconfig"; sourceTree = "<group>"; };
+		B5AC2473221DC66D00DE3DD2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B5AC2476221DC69700DE3DD2 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		B5AC2478221DC77100DE3DD2 /* ControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerType.swift; sourceTree = "<group>"; };
+		B5AC2483221DCB9100DE3DD2 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		B5AC2485221DCD4100DE3DD2 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		D803C5DBC085DB92312956D6 /* libPods-CyWalk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CyWalk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94048D4F1D7F838C00994815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37007CE5F04E56894121D0B8 /* libPods-CyWalk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94048D631D7F838C00994815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94048D6E1D7F838C00994815 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94048D491D7F838C00994815 = {
+			isa = PBXGroup;
+			children = (
+				94048D541D7F838C00994815 /* CyWalk */,
+				94048D691D7F838C00994815 /* CyWalkTests */,
+				94048D741D7F838C00994815 /* CyWalkUITests */,
+				94048D531D7F838C00994815 /* Products */,
+				F52DFD74428859767CF5A099 /* Pods */,
+				A07087E2F1E797349D13EB5B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		94048D531D7F838C00994815 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94048D521D7F838C00994815 /* CyWalk.app */,
+				94048D661D7F838C00994815 /* CyWalkTests.xctest */,
+				94048D711D7F838C00994815 /* CyWalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94048D541D7F838C00994815 /* CyWalk */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC2475221DC68300DE3DD2 /* Protocols */,
+				B5AC2472221DC65C00DE3DD2 /* Coordinator */,
+				B5AC2487221DCE2B00DE3DD2 /* Map */,
+				B5AC2481221DCAF400DE3DD2 /* Models */,
+				B5AC247A221DC8B100DE3DD2 /* Data Points */,
+				B5AC247F221DC9A700DE3DD2 /* Djikstra */,
+				B5AC2482221DCB7C00DE3DD2 /* Extensions */,
+				94048D551D7F838C00994815 /* AppDelegate.swift */,
+				94048D5C1D7F838C00994815 /* Assets.xcassets */,
+				94048D611D7F838C00994815 /* Info.plist */,
+				94048D5E1D7F838C00994815 /* LaunchScreen.storyboard */,
+			);
+			path = CyWalk;
+			sourceTree = "<group>";
+		};
+		94048D691D7F838C00994815 /* CyWalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				94048D6A1D7F838C00994815 /* CyWalkTests.swift */,
+				94048D6C1D7F838C00994815 /* Info.plist */,
+			);
+			path = CyWalkTests;
+			sourceTree = "<group>";
+		};
+		94048D741D7F838C00994815 /* CyWalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				94048D751D7F838C00994815 /* CyWalkUITests.swift */,
+				94048D771D7F838C00994815 /* Info.plist */,
+			);
+			path = CyWalkUITests;
+			sourceTree = "<group>";
+		};
+		A07087E2F1E797349D13EB5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D803C5DBC085DB92312956D6 /* libPods-CyWalk.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5AC2472221DC65C00DE3DD2 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC2476221DC69700DE3DD2 /* MainCoordinator.swift */,
+			);
+			name = Coordinator;
+			sourceTree = "<group>";
+		};
+		B5AC2475221DC68300DE3DD2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC2473221DC66D00DE3DD2 /* Coordinator.swift */,
+				B5AC2478221DC77100DE3DD2 /* ControllerType.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B5AC247A221DC8B100DE3DD2 /* Data Points */ = {
+			isa = PBXGroup;
+			children = (
+				94195C391DC452A9007AC1FA /* Paths.swift */,
+				94B538751DC9AAA600AB9910 /* Buildings.swift */,
+				94195C3B1DC454E6007AC1FA /* Intersections.swift */,
+				1FD962471DE0281C00D05821 /* Buildingscourtyard.swift */,
+			);
+			name = "Data Points";
+			sourceTree = "<group>";
+		};
+		B5AC247F221DC9A700DE3DD2 /* Djikstra */ = {
+			isa = PBXGroup;
+			children = (
+				1F61AB911DC7D0A7002FB996 /* Dijkstra.swift */,
+				B5AC2480221DC9BB00DE3DD2 /* Binary Heap */,
+			);
+			name = Djikstra;
+			sourceTree = "<group>";
+		};
+		B5AC2480221DC9BB00DE3DD2 /* Binary Heap */ = {
+			isa = PBXGroup;
+			children = (
+				1F17BD591DC59BA500566F53 /* BinaryHeap.swift */,
+				1F17BD571DC59B8500566F53 /* Binnode.swift */,
+			);
+			name = "Binary Heap";
+			sourceTree = "<group>";
+		};
+		B5AC2481221DCAF400DE3DD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9425BF8F1DC4461D00B0794D /* Intersection.swift */,
+				9425BF931DC446DF00B0794D /* Path.swift */,
+				94B538731DC9A82000AB9910 /* Building.swift */,
+				1F0160671DC95F51002C15F0 /* Gps_Id.swift */,
+				1F17BD551DC59B5200566F53 /* Vertex.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B5AC2482221DCB7C00DE3DD2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B5AC2483221DCB9100DE3DD2 /* UIColor+Extensions.swift */,
+				B5AC2485221DCD4100DE3DD2 /* UINavigationController+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B5AC2487221DCE2B00DE3DD2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				943A2B281DA0D8B500F55B41 /* MapViewController.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		F52DFD74428859767CF5A099 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				05564605DAAB705E8BCA0C76 /* Pods-CyWalk.debug.xcconfig */,
+				A799FA8F518232B257B3078B /* Pods-CyWalk.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94048D511D7F838C00994815 /* CyWalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94048D7A1D7F838C00994815 /* Build configuration list for PBXNativeTarget "CyWalk" */;
+			buildPhases = (
+				0D35EF7E61D744D45C658221 /* [CP] Check Pods Manifest.lock */,
+				94048D4E1D7F838C00994815 /* Sources */,
+				94048D4F1D7F838C00994815 /* Frameworks */,
+				94048D501D7F838C00994815 /* Resources */,
+				2D8EEE551CEB9F1ECBEF0C53 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CyWalk;
+			productName = CyWalk;
+			productReference = 94048D521D7F838C00994815 /* CyWalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94048D651D7F838C00994815 /* CyWalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94048D7D1D7F838C00994815 /* Build configuration list for PBXNativeTarget "CyWalkTests" */;
+			buildPhases = (
+				94048D621D7F838C00994815 /* Sources */,
+				94048D631D7F838C00994815 /* Frameworks */,
+				94048D641D7F838C00994815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94048D681D7F838C00994815 /* PBXTargetDependency */,
+			);
+			name = CyWalkTests;
+			productName = CyWalkTests;
+			productReference = 94048D661D7F838C00994815 /* CyWalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94048D701D7F838C00994815 /* CyWalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94048D801D7F838C00994815 /* Build configuration list for PBXNativeTarget "CyWalkUITests" */;
+			buildPhases = (
+				94048D6D1D7F838C00994815 /* Sources */,
+				94048D6E1D7F838C00994815 /* Frameworks */,
+				94048D6F1D7F838C00994815 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94048D731D7F838C00994815 /* PBXTargetDependency */,
+			);
+			name = CyWalkUITests;
+			productName = CyWalkUITests;
+			productReference = 94048D711D7F838C00994815 /* CyWalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94048D4A1D7F838C00994815 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "John W. Fleiner";
+				TargetAttributes = {
+					94048D511D7F838C00994815 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5666V9N38M;
+						LastSwiftMigration = 1010;
+					};
+					94048D651D7F838C00994815 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = 94048D511D7F838C00994815;
+					};
+					94048D701D7F838C00994815 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = 94048D511D7F838C00994815;
+					};
+				};
+			};
+			buildConfigurationList = 94048D4D1D7F838C00994815 /* Build configuration list for PBXProject "CyWalk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94048D491D7F838C00994815;
+			productRefGroup = 94048D531D7F838C00994815 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94048D511D7F838C00994815 /* CyWalk */,
+				94048D651D7F838C00994815 /* CyWalkTests */,
+				94048D701D7F838C00994815 /* CyWalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94048D501D7F838C00994815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94048D601D7F838C00994815 /* LaunchScreen.storyboard in Resources */,
+				94048D5D1D7F838C00994815 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94048D641D7F838C00994815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94048D6F1D7F838C00994815 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D35EF7E61D744D45C658221 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CyWalk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8EEE551CEB9F1ECBEF0C53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CyWalk/Pods-CyWalk-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CyWalk/Pods-CyWalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94048D4E1D7F838C00994815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9425BF901DC4461D00B0794D /* Intersection.swift in Sources */,
+				1F17BD581DC59B8500566F53 /* Binnode.swift in Sources */,
+				1FD962481DE0281D00D05821 /* Buildingscourtyard.swift in Sources */,
+				94B538761DC9AAA600AB9910 /* Buildings.swift in Sources */,
+				1F17BD5A1DC59BA500566F53 /* BinaryHeap.swift in Sources */,
+				94195C3C1DC454E6007AC1FA /* Intersections.swift in Sources */,
+				1F17BD561DC59B5200566F53 /* Vertex.swift in Sources */,
+				B5AC2484221DCB9100DE3DD2 /* UIColor+Extensions.swift in Sources */,
+				1F61AB921DC7D0A7002FB996 /* Dijkstra.swift in Sources */,
+				1F0160681DC95F51002C15F0 /* Gps_Id.swift in Sources */,
+				943A2B291DA0D8B500F55B41 /* MapViewController.swift in Sources */,
+				9425BF941DC446DF00B0794D /* Path.swift in Sources */,
+				94195C3A1DC452A9007AC1FA /* Paths.swift in Sources */,
+				B5AC2479221DC77100DE3DD2 /* ControllerType.swift in Sources */,
+				94048D561D7F838C00994815 /* AppDelegate.swift in Sources */,
+				B5AC2477221DC69700DE3DD2 /* MainCoordinator.swift in Sources */,
+				94B538741DC9A82000AB9910 /* Building.swift in Sources */,
+				B5AC2486221DCD4100DE3DD2 /* UINavigationController+Extensions.swift in Sources */,
+				B5AC2474221DC66E00DE3DD2 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94048D621D7F838C00994815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94048D6B1D7F838C00994815 /* CyWalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94048D6D1D7F838C00994815 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94048D761D7F838C00994815 /* CyWalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94048D681D7F838C00994815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94048D511D7F838C00994815 /* CyWalk */;
+			targetProxy = 94048D671D7F838C00994815 /* PBXContainerItemProxy */;
+		};
+		94048D731D7F838C00994815 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94048D511D7F838C00994815 /* CyWalk */;
+			targetProxy = 94048D721D7F838C00994815 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94048D5E1D7F838C00994815 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94048D5F1D7F838C00994815 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94048D781D7F838C00994815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94048D791D7F838C00994815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94048D7B1D7F838C00994815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05564605DAAB705E8BCA0C76 /* Pods-CyWalk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5666V9N38M;
+				INFOPLIST_FILE = CyWalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.benyoung.CyWalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		94048D7C1D7F838C00994815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A799FA8F518232B257B3078B /* Pods-CyWalk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5666V9N38M;
+				INFOPLIST_FILE = CyWalk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.benyoung.CyWalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		94048D7E1D7F838C00994815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CyWalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jwf.CyWalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CyWalk.app/CyWalk";
+			};
+			name = Debug;
+		};
+		94048D7F1D7F838C00994815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CyWalkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jwf.CyWalkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CyWalk.app/CyWalk";
+			};
+			name = Release;
+		};
+		94048D811D7F838C00994815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CyWalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jwf.CyWalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = CyWalk;
+			};
+			name = Debug;
+		};
+		94048D821D7F838C00994815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CyWalkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jwf.CyWalkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = CyWalk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94048D4D1D7F838C00994815 /* Build configuration list for PBXProject "CyWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94048D781D7F838C00994815 /* Debug */,
+				94048D791D7F838C00994815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94048D7A1D7F838C00994815 /* Build configuration list for PBXNativeTarget "CyWalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94048D7B1D7F838C00994815 /* Debug */,
+				94048D7C1D7F838C00994815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94048D7D1D7F838C00994815 /* Build configuration list for PBXNativeTarget "CyWalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94048D7E1D7F838C00994815 /* Debug */,
+				94048D7F1D7F838C00994815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94048D801D7F838C00994815 /* Build configuration list for PBXNativeTarget "CyWalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94048D811D7F838C00994815 /* Debug */,
+				94048D821D7F838C00994815 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94048D4A1D7F838C00994815 /* Project object */;
+}
